@@ -6,9 +6,11 @@ class RawDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = RawData
         fields = '__all__'
+        many = True
 
 
 class TransformedDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = TransformedData
         fields = '__all__'
+        many = True
